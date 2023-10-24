@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" style="background-color: rgb(230, 226, 195);">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,10 +45,21 @@
         .tab-content.active {
             display: block;
         }
+        .textalign{
+            color:darkred;;
+            text-align: center;
+        }
+        .textcolorheading{
+            color:darkred;
+        }
     </style>
 </head>
 <body>
-    <div class="tabs">
+    <div  class="textalign">
+        <h2>Section Designer App</h2>
+    </div>
+    
+    <div class="tabs" >
         <div class="tab-header" onmousemove="showTab('Version')">Version</div>
         <div class="tab-header" onmousemove="showTab('developer')">Developer</div>
         <div class="tab-header" onmousemove="showTab('limitations')">Limitations</div>
@@ -56,7 +67,7 @@
         
     </div>
     <div class="tab-content" id="Version">
-        <p><strong>Version:</strong> V1.0.0 </p>
+        <p><strong>Version:</strong> V1.1 </p>
         <p> <strong>   Release Date:    </strong>  09-25-2023 </p>
     </div>
     <div class="tab-content" id="developer">
@@ -64,40 +75,38 @@
         <p><strong>Contact Info :</strong> <a href="mailto:shegde@walterpmoore.com">shegde@walterpmoore.com</a></p>
     </div>
     
-    <div class="tab-content" id="futureUpdates">
-        <h2>Future Updates</h2>
+    <div class="tab-content" id="futureUpdates" >
+        <h2 class="textcolorheading">Future Updates</h2>
+        <hr>
         <h3>Geometry </h3>
         <ul>
-            
             <li>Assign chosen pier section to Pier Labels in Etabs</li>
             <li>Pier export to Revit as Drafting Views</li>
             <li>Overwrite existing pier or skip option while exporting</li>
-            <li>Import Wall geometry from Etabs</li>
+             <li>Import Wall geometry from Etabs</li>
             <li>Import rebar along with the pier from AutoCAD</li>
-            <li>Draw wall shapes in the application</li>
-            </ul>
+        </ul>
         
-        <h3>materials and Quantity </h3>
+            <h3>materials and Quantity </h3>
         <ul>
             <li>Link material to air table data</li>
             <li>Calculate quantities</li>
-
-            
-        <h3>Analysis and Design </h3>
         </ul>
+            
+            <h3>Analysis and Design </h3>
+        </ul>
+        <ul>
             <li>Shear reinf scheduling</li>
             <li>Showing Key plan of fllor for reference in the app</li>
            
-            
         </ul>
     </div>
     <div class="tab-content" id="limitations">
-        <h2>Limitations</h2>
+        <h2 class="textcolorheading">Limitations</h2>
+        <hr>
         <ul>
-            <li>This App will not design shear walls. It will only help in scheduling/ adding rebars and export the geometry as general pier section to etabs</li>
-            
-            <li>Import wall geometry from Etabs</li>
-           
+            <li>This App will not design shear walls. It will only help in scheduling, adding rebars and export the peirs to general pier section in etabs</li>
+        
         </ul>
     </div>
 
